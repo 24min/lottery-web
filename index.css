@@ -1,11 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 body,
 html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-family: "Open Sans", sans-serif;
     background: #282828;
     color: white;
-    padding-top: 20px;
+    padding:0;
+    margin:0;
+    /* padding-top: 20px; */
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     overflow: hidden;
@@ -111,3 +114,64 @@ html {
     top: 50%;
     transition: 0.1s all;
 }
+
+.phone {
+    position: fixed;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 15px;
+    bottom:0;
+    height: 100px;
+    width: 100vw;
+  }
+  
+  /* .phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.4s ease;
+  } */
+  
+  .phone .content.show {
+    opacity: 1;
+  }
+  
+  .tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    /* margin-top: -5px; */
+    width: 100vw;
+  }
+  
+  .tab .tab-ul {
+    background-color: #fff;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 58px;
+  }
+  
+  .tab .tab-li {
+    color: #777;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .tab .tab-ul .tab-li p {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  
+  .tab .tab-ul .tab-li:hover,
+  .tab .tab-ul .tab-li.active {
+    color: #8e44ad;
+  }
