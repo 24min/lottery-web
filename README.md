@@ -2,6 +2,4 @@
 
 lottery-web
 
-from coco
-
-https://codepen.io/Chokcoco/pen/jKgmKV
+https://24min.github.io/lottery-web/
